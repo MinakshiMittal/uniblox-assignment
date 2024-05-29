@@ -1,20 +1,20 @@
 import { render, fireEvent, cleanup } from "@testing-library/react";
-import { ProductCard } from "./ProductCard";
-import { userCartSelector } from "../../store/userCartSlice";
+import { ProductCard } from "../pages/products/ProductCard";
+import { userCartSelector } from "../store/userCartSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { addToCart } from "../../store/userCartSlice";
+import { addToCart } from "../store/userCartSlice"
 
 jest.mock("react-redux", () => ({
   useDispatch: jest.fn(),
   useSelector: jest.fn(),
 }));
 
-jest.mock("../../store/userCartSlice", () => ({
+jest.mock("../store/userCartSlice", () => ({
   userCartSelector: jest.fn().mockReturnValue({ cart: [] }),
 }));
 
-jest.mock("../../store/userCartSlice", () => ({
+jest.mock("../store/userCartSlice", () => ({
   addToCart: jest.fn(),
 }));
 

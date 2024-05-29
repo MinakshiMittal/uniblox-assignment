@@ -1,10 +1,10 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import { Cart } from "../cart/Cart";
-import { userCartSelector } from "../../store/userCartSlice";
+import { Cart } from "../pages/cart/Cart";
+import { userCartSelector } from "../store/userCartSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { ArrowLeftIcon } from "../../assets/icons/ArrowLeftIcon";
-import { CartCard } from "./CartCard";
+import { ArrowLeftIcon } from "../assets/icons/ArrowLeftIcon";
+import { CartCard } from "../pages/cart/CartCard";
 
 jest.mock("react-redux", () => ({
   useSelector: jest.fn(),

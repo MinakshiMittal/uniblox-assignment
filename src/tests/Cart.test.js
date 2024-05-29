@@ -1,8 +1,8 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import { Cart } from "./Cart";
+import { Cart } from "../pages/cart/Cart";
 import { useSelector } from "react-redux";
-import { CartCard } from "./CartCard";
+import { CartCard } from "../pages/cart/CartCard";
 import { useNavigate } from "react-router-dom";
 
 jest.mock("react-redux", () => ({

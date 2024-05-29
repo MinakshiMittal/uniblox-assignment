@@ -1,7 +1,7 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 import { useSelector, useDispatch } from "react-redux";
-import { Products } from "./Products"
+import { Products } from "../pages/products/Products"
 import { useNavigate } from "react-router-dom";
 
 jest.mock("react-redux", () => ({
