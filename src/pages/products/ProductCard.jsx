@@ -5,9 +5,9 @@ import { useNavigate } from "react-router-dom";
 export const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
   const { cart } = useSelector(userCartSelector);
-  console.log(cart, "cart");
   const navigate = useNavigate();
 
+  // Function to check if product is already in cart
   const isProductInCart = (item) =>
     cart?.filter((product) => product?.id === item?.id)?.length;
 
