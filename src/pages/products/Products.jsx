@@ -3,7 +3,6 @@ import { products } from "../../data";
 import { ProductCard } from "./ProductCard";
 import { useSelector } from "react-redux";
 import { userCartSelector } from "../../store/userCartSlice";
-import { ShoppingCartIcon } from "@heroicons/react";
 import { CartIcon } from "./CartIcon";
 
 export const Products = () => {
