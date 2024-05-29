@@ -45,14 +45,10 @@ describe("Cart Component", () => {
   });
 
   test("clicking on ArrowLeftIcon triggers a function", () => {
-    const mockFunction = jest.fn(); // Mock function to be triggered on click
-
-    render(<ArrowLeftIcon onClick={mockFunction} />); // Render the SVG icon with the mock function
-
-    const iconElement = screen.getByTestId("arrow-left-icon"); // Assuming you have set a data-testid attribute
-
-    fireEvent.click(iconElement); // Simulate a click event on the SVG icon
-
-    expect(mockFunction).toHaveBeenCalledTimes(1); // Ensure that the mock function was called exactly once
+    const mockFunction = jest.fn(); 
+    render(<ArrowLeftIcon onClick={mockFunction} />);
+    const iconElement = screen.getByTestId("arrow-left-icon");
+    fireEvent.click(iconElement);
+    expect(mockFunction).toHaveBeenCalledTimes(1);
   });
 });
