@@ -17,7 +17,7 @@ export const Products = () => {
           <div className="cursor-pointer">
             <CartIcon onClick={() => navigate("/cart")} />
           </div>
-          <p className="absolute bottom-3 left-4 w-4 h-4 bg-red-600 text-white text-xs font-medium rounded-full flex items-center justify-center">
+          <p data-testid="cart-count" className="absolute bottom-3 left-4 w-4 h-4 bg-red-600 text-white text-xs font-medium rounded-full flex items-center justify-center">
             {cart?.length}
           </p>
         </div>

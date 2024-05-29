@@ -7,6 +7,7 @@ export const ArrowLeftIcon = (props) => {
       strokeWidth={1.5}
       stroke="currentColor"
       className="size-6"
+      data-testid="arrow-left-icon"
       {...props}
     >
       <path

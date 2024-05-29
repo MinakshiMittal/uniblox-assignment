@@ -7,6 +7,7 @@ export const CartIcon = ( props ) => {
       strokeWidth={1.5}
       stroke="currentColor"
       className="size-6"
+      data-testid="cart-icon"
       {...props}
     >
       <path

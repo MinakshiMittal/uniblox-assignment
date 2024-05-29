@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { Products } from "./pages/products/Products";
+import { Products } from "./pages/products/products/Products";
 import { Cart } from "./pages/cart/Cart";
 
 function App() {
