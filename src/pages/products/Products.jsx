@@ -3,7 +3,7 @@ import { products } from "../../data";
 import { ProductCard } from "./ProductCard";
 import { useSelector } from "react-redux";
 import { userCartSelector } from "../../store/userCartSlice";
-import { CartIcon } from "./CartIcon";
+import { CartIcon } from "../../assets/icons/CartIcon";
 
 export const Products = () => {
   const navigate = useNavigate();

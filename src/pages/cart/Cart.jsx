@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
 import { CartCard } from "./CartCard";
 import { userCartSelector } from "../../store/userCartSlice";
-import { CartIcon } from "../products/CartIcon";
-import { ArrowLeftIcon } from "./ArrowLeftIcon";
+import { CartIcon } from "../../assets/icons/CartIcon";
+import { ArrowLeftIcon } from "../../assets/icons/ArrowLeftIcon";
 import { useNavigate } from "react-router-dom";
 import { CartSummary } from "./CartSummary";
 

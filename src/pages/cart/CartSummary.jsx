@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
-import { ErrorIcon } from "./ErrorIcon";
+import { ErrorIcon } from "../../assets/icons/ErrorIcon";
 import { createOrder, userCartSelector } from "../../store/userCartSlice";
 
 export const CartSummary = () => {
